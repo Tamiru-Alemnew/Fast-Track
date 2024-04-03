@@ -3,10 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-
-
 import pyautogui as pag
 
+# Path to the chromedriver downloaded from https://chromedriver.chromium.org/downloads 
 PATH = "path/to/chromedriver"
 
 chrome_options = Options()
