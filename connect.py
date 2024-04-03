@@ -53,9 +53,6 @@ def main():
     # url of LinkedIn network page
     network_url = "http://linkedin.com / mynetwork/"  
  
-    # path to browser web driver
-	# Create a ChromeOptions object
-  
     driver.get(url)
 	
     login()
