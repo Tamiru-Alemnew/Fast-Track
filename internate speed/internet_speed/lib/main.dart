@@ -38,6 +38,19 @@ class _MyAppState extends State<MyApp> {
       });
     }
 
+  Future<void> _testDownloadSpeed() async {
+      setState(() {
+        loadingDownload = true;
+      });
+      final _downloadRate =
+          await tester.testDownloadSpeed(servers: bestServersList);
+      setState(() {
+        downloadRate = _downloadRate;
+        _speedValue = downloadRate;
+        loadingDownload = false;
+      });
+    } 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
