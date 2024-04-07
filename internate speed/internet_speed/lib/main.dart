@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:speed_test_dart/classes/classes.dart'; 
+import 'package:speed_test_dart/speed_test_dart.dart'; 
+import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 void main() {
   runApp(const MyApp());
