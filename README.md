@@ -1,16 +1,3 @@
-# internet_speed
+## FastTrack 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ I'm building a simple Internet Speed Tracker App that's easy to use and understand. This project shows how to make a reliable app for checking your internet speed. Take a quick look at the video below to see what I'm doing!
