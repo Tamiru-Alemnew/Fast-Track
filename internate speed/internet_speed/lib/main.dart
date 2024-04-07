@@ -3,10 +3,6 @@ import 'package:speed_test_dart/classes/classes.dart';
 import 'package:speed_test_dart/speed_test_dart.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
-import 'package:flutter/material.dart';
-import 'package:speed_test_dart/classes/classes.dart';
-import 'package:speed_test_dart/speed_test_dart.dart';
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
@@ -27,6 +23,20 @@ class _MyAppState extends State<MyApp> {
   bool readyToTest = false;
   bool loadingDownload = false;
   bool loadingUpload = false;
+
+  Future<void> setBestServers() async {
+      final settings = await tester.getSettings();
+      final servers = settings.servers;
+
+      final _bestServersList = await tester.getBestServers(
+        servers: servers,
+      );
+
+      setState(() {
+        bestServersList = _bestServersList;
+        readyToTest = true;
+      });
+    }
 
   @override
   Widget build(BuildContext context) {
