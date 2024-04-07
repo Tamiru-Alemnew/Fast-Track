@@ -50,6 +50,19 @@ class _MyAppState extends State<MyApp> {
         loadingDownload = false;
       });
     } 
+  Future<void> _testUploadSpeed() async {
+    setState(() {
+      loadingUpload = true;
+    });
+
+    final _uploadRate = await tester.testUploadSpeed(servers: bestServersList);
+
+    setState(() {
+      uploadRate = _uploadRate;
+      _speedValue = uploadRate;
+      loadingUpload = false;
+    });
+  } 
 
   @override
   Widget build(BuildContext context) {
