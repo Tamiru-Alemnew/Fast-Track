@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Gfg Internet Speed Tester'),
+          title: const Text('Internet Speed Tester'),
         ),
         body: SingleChildScrollView(
           child: Center(
